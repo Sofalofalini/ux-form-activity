@@ -1,0 +1,231 @@
+body {
+    background: rgb(196,149,227);
+    background: linear-gradient(90deg, rgba(196,149,227,1) 0%, rgba(255,157,154,1) 46%, rgba(255,239,155,1) 95%);
+}
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15px;
+}
+
+.contact-form-wrapper {
+    color: #fff;
+    border-radius: 50px;
+    font-family: 'Poppins';
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 100px 0px 100px;
+    width: 40%;
+    min-width: 400px;
+    background-color: rgb(6, 5, 5);
+}
+.input100::placeholder, .btn {
+    color: #fff;
+    font-size: 18px;
+}
+.input100::placeholder {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.input100 {
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.contact-form-title {
+    position: relative;
+    right: -10px;
+    margin-top: 50px;
+    display: flex;
+    font-size: 30px;
+    line-height: 1.2;
+    padding-bottom: 25px;
+}   
+.emoji {
+    padding-left: 10px;
+} 
+input, textarea {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Poppins';
+    outline: none;
+    border: none;
+}
+.input100#email, .input100#name, button {
+    margin-top: 40px;
+    width: 110%;
+    background: transparent;
+    line-height: 1.2;
+}
+textarea {
+    margin-top: 10px;
+    width: 110%;
+    background: transparent;
+    font-size: 15px;
+    line-height: 1.2;
+    resize: none;
+    height: 150px;
+}
+textarea:focus {
+    outline: none;
+}
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+text {
+    font-size: 18px;
+    position: relative;
+    left: 30px;
+    padding-left: 5px;
+}
+.checkbox-label {
+    display: block;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    bottom: 25px;
+    right: 100px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 1px solid #FFFFFF;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: 1px solid #FFFFFF;
+}
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #009BFF;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #009BFF;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.checkbox-label .checkbox-custom::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);    
+}
+.checkbox-label input:checked ~ .checkbox-custom::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity:0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+.contact-form-btn {
+    padding-bottom :50px;
+}
+.btn:focus {
+    outline: none;
+}
+.btn {
+    font-family: 'Poppins';
+    border-radius: 150px;
+    border: none;
+}
+.btn {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}

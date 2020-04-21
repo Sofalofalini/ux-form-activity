@@ -12,6 +12,45 @@
     <link href="./style.css" rel="stylesheet" media="all">
 </head>
 <body>
-    
+<div class="body-wrapper">
+    <div class='contact-form-wrapper'>
+        <form
+        action=""
+        method="POST"
+        >
+            <span class='contact-form-title'>
+                Get in Touch <img src="./emoji.png" class="emoji" width="32px" height='32px'>
+            </span>
+            
+            <div class='form-row' data-validate="Name is required.">
+                <input class='input100' id='name' required type='text' name='name' placeholder='Name'/>
+            </div>
+
+            <div class='form-row' data-validate="Valid email is required: ex@abc.xyz">
+                <input class='input100' id='email' required type='text' name='email' placeholder='Email'/>
+            </div>
+
+            <div class='form-row' data-validate="Message is required">
+                <textarea class='input100' name='message' required type="text" placeholder='Your message...'></textarea>
+            </div>
+
+            <div class="checkbox-container">
+                <text>Send a copy to my e-mail</text>
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span class="checkbox-custom rectangular"></span> 
+                </label>
+               
+                </div>
+
+            <div class="contact-form-btn">
+                <button class="btn">
+                    Send Email
+                </button>
+            </div>
+        
+        </form>
+    </div>
+</div>
 </body>
 </html>
